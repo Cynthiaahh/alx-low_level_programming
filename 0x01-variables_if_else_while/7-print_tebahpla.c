@@ -9,8 +9,7 @@ include < stdio.h >
 int main(void)
 {
 char ch = 'a'
-for (ch = 'a'; ch > = 'b'; ch--)
-{
+for (ch = 'a'; ch >= 'b'; ch--)
 putchar(ch);
 putchar('\n');
 return (0);
