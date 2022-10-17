@@ -8,11 +8,13 @@
  */
 int main(void)
 {
-char ch = 'a';
+char ch;
 for (ch = 'a'; ch > 'w'; ch--)
 {
 	putchar(ch);
 }
+
 putchar('\n');
+
 return (0);
 }
