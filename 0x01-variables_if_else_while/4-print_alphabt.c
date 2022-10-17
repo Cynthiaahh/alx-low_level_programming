@@ -13,8 +13,6 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 if (ch == 'e' || ch == 'q')
 {
-if (ch == 'e' || ch == 'q')
-{
 ch++;
 }
 putchar(ch);
