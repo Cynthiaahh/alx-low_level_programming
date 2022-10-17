@@ -9,8 +9,10 @@
 int main(void)
 {
 char ch = 'a';
-for (ch = 'a'; ch >= 'w'; ch--)
-putchar(ch);
+for (ch = 'a'; ch > 'w'; ch--)
+{
+	putchar(ch);
+}
 putchar('\n');
 return (0);
 }
