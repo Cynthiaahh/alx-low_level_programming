@@ -8,11 +8,10 @@ include < stdio.h >
  */
 int main(void)
 {
-char c;
-for (c = 'z'; c > = 'a'; c--)
+char ch = 'a'
+for (ch = 'a'; ch > = 'b'; ch--)
 {
-	putchar(c);
-}
+putchar(ch);
 putchar('\n');
 return (0);
 }
