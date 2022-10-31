@@ -1,17 +1,17 @@
 #include "main.h"
+#define NULL 0
 
 /**
- * _strspn - return length of string that matches values consistently
+ * _strpbrk - return pointer to byte in s that matches a byte in accept
  * @s: string to search
  * @accept: target matches
  * Return: number of bytes consecutively matched
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
 	int j;
-	int matches = 0;
 
 	while (s[i] != '\0')
 	{
@@ -19,15 +19,11 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				matches++;
-				break;
-			}
-			if (accept[j + 1] == '\0' && s[i] != accept[j])
-			{
-				return (matches);
+				s = &s[i];
+				return (s);
 			}
 		}
 		i++;
 	}
-	return (matches);
+	return (NULL);
 }
